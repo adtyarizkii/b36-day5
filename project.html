@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>Personal Web - My Project</title>
+    <link rel="stylesheet" href="views/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="project.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="left-side">
+        <a href="index.html"><img src="assets/logo.png" alt="Dumbways.id" /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html" class="active">My Project</a></li>
+        </ul>
+      </div>
+
+      <div class="right-side">
+        <a href="contact-me.html">Contact Me</a>
+      </div>
+    </nav>
+    <div class="add-project">
+      <form>
+          <h1 style="text-align: center;">ADD MY PROJECT</h1>
+          <div class="" style="margin-bottom: 10px;">
+            <label for="input-name" style="font-size: 20px; font-weight: 600">Project Name</label>
+            <input
+              type="text"
+              placeholder="Project Name..."
+              id="input-name"
+              style="
+                width: 100%;
+                background-color: #f4f3f3;
+                border: 1px solid #c4c4c4;
+                padding: 5px;
+                margin-top: 5px;
+                border-radius: 8px;"/>
+          </div>
+          <div class="container-flex-date">
+            <div style="margin-bottom: 10px">
+              <label for="input-start-date" style="font-size: 20px; font-weight: 600">Start Date</label>
+              <input
+                type="date"
+                id="input-start-date"
+                style="
+                  width: 100%;
+                  background-color: #f4f3f3;
+                  border: 1px solid #c4c4c4;
+                  padding: 5px;
+                  margin-top: 5px;
+                  border-radius: 8px;"/>
+            </div>
+            <div style="margin-bottom: 10px">
+              <label for="input-end-date" style="font-size: 20px; font-weight: 600">End Date</label>
+              <input
+                type="date"
+                id="input-end-date"
+                style="
+                  width: 100%;
+                  background-color: #f4f3f3;
+                  border: 1px solid #c4c4c4;
+                  padding: 5px;
+                  margin-top: 5px;
+                  border-radius: 8px;"/>
+            </div>
+          </div>
+
+          <div class="" style="margin-bottom: 10px">
+              <label for="input-desc" style="font-size: 20px; font-weight: 600">Description</label>
+            <textarea
+              id="input-desc"
+              placeholder="Description of Project..."
+              style="
+              width: 100%;
+              background-color: #f4f3f3;
+              border: 1px solid #c4c4c4;
+              padding: 8px;
+              margin-top: 5px;
+              border-radius: 8px;
+              resize: vertical;
+              height: 100px;"></textarea>
+
+          </div>
+          <label style="font-size: 20px; font-weight: 600">Technologies </label>
+          <div class="container-flex-date" style="margin-bottom: 10px">
+              <div class="left">
+                  <input type="checkbox" name="techno" id="node-js" value="<i class='fa-brands fa-node-js' fa-xl></i>">
+                  <label for="node-js" class="checkbox-tech">Node Js</label> <br>
+                  <input type="checkbox" name="techno" id="react-js" value="<i class='fa-brands fa-react' fa-xl></i>">
+                  <label for="react-js" class="checkbox-tech">React Js</label>
+              </div>
+              <div class="right">
+                  <input type="checkbox" name="techno" id="android" value="<i class='fa-brands fa-android'></i>">
+                  <label for="android" class="checkbox-tech">Android</label> <br>
+                  <input type="checkbox" name="techno" id="java" value="<i class='fa-brands fa-java'></i>">
+                  <label for="java" class="checkbox-tech">Java</label>
+              </div>
+          </div>
+          <div class="" style="margin-bottom: 10px">
+              <label for="upload-image" style="font-size: 20px; font-weight: 600">Upload Image</label>
+              <div class="input-project-image-group">
+                <label for="input-project-image">
+                  <p style="font-size: 15px; margin-left: 10px;">choose</p>
+                  <img src="assets/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-project-image" hidden />
+              </div>
+
+
+          </div>
+          <div class="edit-delete-button">
+              <button type="button" onclick="addProject()">Submit</button>
+          </div>
+      </form>
+  </div>
+  <div class="post-project">
+          <h1>MY PROJECT</h1>
+          <div class="grid-container" id="project-list">
+            
+          </div>
+      </div>
+      <script src="js/project.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" integrity="sha512-x/vqovXY/Q4b+rNjgiheBsA/vbWA3IVvsS8lkQSX1gQ4ggSJx38oI2vREZXpTzhAv6tNUaX81E7QBBzkpDQayA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #d9e3eb;
+    font-family: 'poppins', sans-serif;
+}
+
+nav {
+    background-color: #f4f3f3;
+    height: 7vh;
+    display: flex;
+}
+  
+nav div {
+    display: flex;
+    align-items: center;
+}
+  
+nav .left-side {
+    flex: 50%;
+    padding-left: 90px;
+}
+  
+nav .right-side {
+    flex: 50%;
+    padding-right: 90px;
+    justify-content: flex-end;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin-left: 40px;
+}
+  
+nav ul li {
+    display: inline;
+    margin-left: 40px;
+}
+  
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+  
+nav ul li a.active {
+    color: #030303;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    font-weight: 700;
+}
+
+nav .right-side a {
+    font-size: 15px;
+    padding: 8px 20px;
+    background-color: #070707;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.personal {
+    
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  
+.personal button {
+    background-color: #020202;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-content {
+    background-color: white;
+    padding: 5px;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(82, 80, 80);
+}
+
+.container-content .right {
+    flex: 40%;
+    padding: 50px;
+    
+    
+}
+  
+.container-content .left {
+    flex: 60%;
+    padding: 50px;
+    
+}
+
+.btn a:hover{
+    font-weight: 600; 
+}
+
+.btn a {
+    padding: 10px;
+}
+
+
+.sosmed a {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+/* project */
+
+.add-project{
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container-flex-date {
+    Display: flex;
+    width: auto;
+}
+
+
+
+label.checkbox-tech {
+    font-size: 12pt;
+    font-weight: 600;
+    color: rgb(97, 89, 89);
+}
+
+input[type='checkbox'] {
+    width: auto;
+}
+
+.input-project-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+.add-project button {
+    background-color: #020202;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 75%;
+}
+
+/*project list */
+
+.post-project{
+    background-color: white;
+    padding: 5vh 5vw;
+}
+
+.post-project h1{
+    text-align: center;
+}
+ .post-project .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 78vw;
+}
+.post-project .grid-item{
+    border: 1px solid black;
+    margin: 1vh 1vw;
+    background: #fdfdfd;
+    width: 26vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 1vw;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px gray
+}
+
+.post-project .grid-item p{
+    overflow: hidden;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.post-project .grid-item img{
+    width: 100%;
+    height: 33vh;
+    border-radius: 5px;
+}
+
+.post-project .title h2{
+    margin-bottom: 0px;
+}
+
+.post-project .title p {
+    margin-top: 0px;
+    color: #8F8B8B;
+    font-size: small;
+}
+
+.tech-icon , .tech-icon img, .post-project .tech-icon img{
+    font-size: 30px;
+    height: 3vh;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.post-project .tech-icon{
+    display: flex;
+    gap: 20px;
+
+}
+
+.post-project .button{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.post-project .button button{
+
+    background-color: rgb(5, 5, 56);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+/* Detail Project */
+
+.detail-page{
+    margin: 40px;
+}
+
+.head-detail{
+    display: flex;
+    gap: 30px;
+    height: 70vh;
+    margin-bottom: 20px;
+}
+
+.head-detail-image{
+    /* margin-top: 10px; */
+    object-fit: cover; 
+    border-radius: 10px;
+    width:60%;
+}
+
+.head-detail-item{
+display: grid;
+grid-template-columns: repeat(2,minmax(0,1fr));
+}
+
+.detail-content{
+    text-align: justify;
+}
